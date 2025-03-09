@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+//Fuentes
+$fuente_Mont: "Montserrat", sans-serif;
+$fuente_fira: "Fira Code", monospace;
+$fuente_codePro: "Source Code Pro", monospace;
+
+//size de la fuente
+$delgada: 300;
+$regular: 400;
+$bold: 700;
+$black: 900;
+
+//paleta de colores
+$azul-oscuro: #001653;
+$blanco: #ffffff;
+$negro: #000000;
+
+
+// Tamaño de Media Queries
+$telefono: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+//otros
+$separacion: 5rem;

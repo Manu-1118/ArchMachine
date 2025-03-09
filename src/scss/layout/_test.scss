@@ -1,0 +1,20 @@
+.contenido {
+    background-color: $azul-oscuro;
+    color: $blanco;
+    text-align: center;
+
+    
+    h1 {
+        font-family: $fuente_Mont;
+    }
+
+    h2 {
+        font-family: $fuente_codePro;
+    }
+
+    p {
+        font-size: 3rem;
+        font-family: $fuente_fira;
+        color: $blanco;
+    }
+}
