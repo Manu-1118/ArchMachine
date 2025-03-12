@@ -41,3 +41,6 @@ Use `php -S localhost:3000` in **other terminal** to open thNe  home page **or**
 ## License
 
 The ArchMachine is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Figma Desing
+If you wanna watch the desing of prototype web site in [Figma Community](https://www.figma.com/community/file/1481654586549699929)
