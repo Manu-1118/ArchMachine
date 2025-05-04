@@ -1,0 +1,63 @@
+.header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .contenedor-logo {
+        .logo {
+
+            width: 8rem;
+        }
+    }
+
+    .navegacion {
+
+        li {
+            &:hover {
+                color: $azul_secundario;
+                transition: color .2s ease-in;
+            }
+        }
+
+        .opciones-navegacion {
+
+            margin: 0;
+            color: $blanco;
+            font-family: $fuente_titulo_principal;
+            font-weight: calc($bold - 100);
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.4rem;
+            column-gap: 1.5rem;
+
+
+            .sub-desplegado {
+                display: none;
+                position: absolute;
+                list-style: none;
+            }
+
+            .sub-opciones {
+
+                &:hover {
+
+                    .sub-desplegado {
+
+                        display: block;
+                        //justify-content: space-evenly;
+                        margin: 1rem 0 0 0;
+                        transition: display .5s ease-out;
+
+                        li {
+                            margin: 1rem 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

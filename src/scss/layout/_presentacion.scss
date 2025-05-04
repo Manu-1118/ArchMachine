@@ -1,0 +1,35 @@
+/**DISEÑOS DE LA PAGINA PRINCIPAL**/
+//NOTA: LAS CLASES DEL BODY ESTAN EN _globales
+
+.titulo-pagina {
+
+    .titulos {
+
+        color: $gris;
+        //padding: 0 5rem;
+
+        h1 {
+            font-size: 4rem;
+            text-align: left;
+            margin-left: 1rem;
+            font-family: $fuente_titulos_secundario;
+            font-weight: $regular;
+        }
+
+        h2 {
+            font-size: 7rem;
+            text-align: left;
+            color: $azul_secundario;
+            font-weight: $bold;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 20rem;
+                height: .5rem;
+                margin-top: 1rem;
+                background-color: $azul_secundario;
+            }
+        }
+    }
+}

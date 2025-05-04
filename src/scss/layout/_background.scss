@@ -1,0 +1,8 @@
+.imagen-fondo-principal {
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(7, 28, 43, 0.9), rgba(7, 28, 43, 0.9)), url(/build/img/bk3.png);
+    background-color: $azul_principal;
+}
