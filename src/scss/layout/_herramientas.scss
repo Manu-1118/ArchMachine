@@ -1,0 +1,51 @@
+.contenedor-herramientas {
+
+    @include grid(3, 0);
+
+    width: 90%;
+    margin: 0 auto $separacion auto;
+    
+}
+
+.sub-contenedor-herramienta {
+    
+    max-height: 40rem;
+    text-align: center;
+    border-right: 1px solid $gris;
+    padding: 2rem 3rem;
+
+    &:last-child {
+        border-right: none;
+    }
+
+    &:hover {
+        background-color: $morado;
+    }
+
+    //border: ;
+    .imagen-herramienta {
+
+        width: 60%;
+        max-height: 40rem;
+        margin: 0 auto;
+    }
+
+    .informacion-herramientas {
+
+        h3 {
+
+            text-align: center  ;
+            margin: 1rem 0;
+            font-size: 4rem;
+            padding: 0;
+            color: $blanco;
+            font-family: $fuente_titulos_secundario;
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: $gris;
+            margin: 0 auto;
+        }
+    }
+}

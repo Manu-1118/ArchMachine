@@ -5,9 +5,15 @@
 
 @import 'base/globales';
 @import 'base/utilidades';
+@import 'base/mixins';
 
 //layout
 @import 'layout/header';
 @import 'layout/presentacion';
 @import 'layout/background';
+@import 'layout/footer';
+@import 'layout/herramientas';
+@import 'layout/nosotros';
+
+
 //internas
