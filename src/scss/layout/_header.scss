@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    //padding: 0 rem;
+    padding: 0 3rem;
 
     .contenedor-logo {
         .logo {
@@ -13,7 +13,7 @@
     }
 
     .navegacion {
-        
+
         cursor: pointer;
 
         li {
@@ -83,4 +83,28 @@
     &.activo {
         display: block;
     }
+}
+
+//**BOTON DE REGRESO AL HEADER**//
+.boton-regreso {
+
+    border-radius: 50%;
+    border: 1.5px solid $gris;
+    width: 6rem;
+    top: 80%;
+    left: 92%;
+    position: fixed;
+
+    .imagen-boton {
+        
+        // width: 90%;
+        // height: 90%;
+
+        img {
+
+            color: $gris;
+
+        }
+    }
+
 }

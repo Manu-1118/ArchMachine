@@ -2,14 +2,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     //Funciones
     desplegarSubMenu();
-    //navegacionFija();
-    mostrarLogo();
-    // scrollNav();
+    swiper();   
 })
 
 //CODE
 function desplegarSubMenu() {
-    const contenedor_menu = document.querySelector('.sub-opciones a');
+    const contenedor_menu = document.querySelector('.sub-opciones');
     const sub_menu = document.getElementById('sub-menu');
 
     contenedor_menu.addEventListener('click', function () {
@@ -18,17 +16,22 @@ function desplegarSubMenu() {
 }
 
 function navegacionFija() {
-    const header = document.querySelector('.header');
-    const nosotros = document.querySelector('.sobre-nosotros');
 
-    window.addEventListener('scroll', () => {
-        if (nosotros.getBoundingClientRect().botton < 1) {
-            header.classList.add('fixed');
+    const header = document.querySelector('.header');
+
+    window.addEventListener('scroll', function () {
+
+        var scroll = window.screenY;
+
+        if (scroll > 10) {
+
+            header.style.backgroundColor = '#071c2b44';
 
         } else {
-            header.classList.remove('fixed');
+
+            header.style.backgroundColor = 'transparent';
         }
-    });
+    })
 }
 
 function scrollNav() {

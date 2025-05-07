@@ -1,31 +1,55 @@
 .contenedor-herramientas {
 
-    @include grid(3, 0);
-
-    width: 90%;
+    @include grid(3, 3rem);
+    width: 85%;
     margin: 0 auto $separacion auto;
-    
+}
+
+.informacion-secundaria {
+
+    margin: 0;
+    padding: 0;
+
+    h2 {
+
+        font-family: $fuente_titulos_secundario;
+        color: $blanco; 
+        margin: 3rem 0 6rem 0;
+        font-size: 8rem;
+
+        span {
+            color: $azul_secundario;
+        }
+    }
 }
 
 .sub-contenedor-herramienta {
-    
+
+
+    transition: all .2s ease-in-out;
     max-height: 40rem;
     text-align: center;
-    border-right: 1px solid $gris;
+    max-width: 40rem;
+    //border-right: 1px solid $gris;
     padding: 2rem 3rem;
 
-    &:last-child {
-        border-right: none;
-    }
+    // &:last-child {
+    //     border-right: none;
+    // }
 
     &:hover {
+
         background-color: $morado;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 50px 0px lighten(rgba(7,28,43,0.75), 20);
+        transform: translateY(-2rem);
+        transition: transform .2s ease-in-out;
     }
 
     //border: ;
     .imagen-herramienta {
 
-        width: 60%;
+        width: 70%;
         max-height: 40rem;
         margin: 0 auto;
     }
@@ -34,7 +58,7 @@
 
         h3 {
 
-            text-align: center  ;
+            text-align: center;
             margin: 1rem 0;
             font-size: 4rem;
             padding: 0;
