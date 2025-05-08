@@ -14,7 +14,9 @@ body {
     font-size: 1.6rem;
     line-height: 1;
     background-color: $azul_principal;
-    // position: relative;
+    //width: 100%;
+    //position: absolute;
+    overflow-x: hidden;
 }
 
 p {
@@ -57,10 +59,12 @@ picture {
 }
 
 .separar-cuerpo {
+
     display: flex;
     flex-direction: column;
     width: 95%;
     justify-content: space-between;
+    // align-items: baseline;
     min-height: 45rem;
     margin: 0 auto;
 

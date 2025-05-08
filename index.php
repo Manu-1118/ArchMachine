@@ -5,7 +5,7 @@ incluirTemplate('inicio');
 
 <section class="imagen-fondo-principal">
     <div class="separar-cuerpo">
-        
+
         <?php incluirTemplate('header'); ?>
 
         <main class="contenido seccion">
@@ -14,9 +14,42 @@ incluirTemplate('inicio');
                     <h1>Arquitecturas de Máquinas I</h1>
                     <h2>ArchMachine</h2>
                 </div>
-                <div></div>
             </div>
         </main><!--.main-->
+
+        <div class="info-destacada">
+
+            <div class="info">
+                <div class="contendor-imagen">
+                    <img src="/build/img/icons/info3.svg" alt="icono">
+                </div>
+                <div class="contenido-info">
+                    <h3>Informativo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div> <!--.info-->
+
+            <div class="info">
+                <div class="contendor-imagen">
+                    <img src="/build/img/icons/star2.svg" alt="icono">
+                </div>
+                <div class="contenido-info">
+                    <h3>Conciso</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div> <!--.info-->
+
+            <div class="info">
+                <div class="contendor-imagen">
+                    <img src="/build/img/icons/rank2.svg" alt="icono">
+                </div>
+                <div class="contenido-info">
+                    <h3>Calidad</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div> <!--.info-->
+        </div><!--.informacion sobre la pagina-->
+        
     </div>
 
 </section><!--.seccion menu y titulos-->
@@ -36,6 +69,35 @@ incluirTemplate('inicio');
     </div>
 
 </section><!--.informacion sobre la pagina-->
+
+<section class="sobre-arquitecturas">
+
+    <h2>ARQUITECTURAS DE <span>COMPUTADORAS</span></h2>
+
+    <div class="contenedor-arquitecturas">
+
+        <a href="" class="arquitectura">
+            <div class="contenido-arq">
+                <h3 class="titulo">X86</h3>
+            </div>
+        </a><!--.Arquitectura-->
+
+
+        <a href="" class="arquitectura">
+            <div class="contenido-arq">
+                <h3 class="titulo">X64</h3>
+                <!--<img class="imagen-arquitectura" src="/build/img/arquitecturas/ARM.jpg" alt="Arquitectura"> -->
+            </div>
+        </a><!--.Arquitectura-->
+
+        <a href="" class="arquitectura">
+            <div class="contenido-arq">
+                <h3 class="titulo">ARM</h3>
+            </div>
+        </a><!--.Arquitectura-->
+
+    </div>
+</section><!--.seccion de arquitecturas -->
 
 <section class="informacion-secundaria">
     <?php incluirTemplate('bkCuadro'); ?>
@@ -73,13 +135,17 @@ incluirTemplate('inicio');
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta est doloribus beatae repellendus, vero ipsum in facere vel voluptate laudantium cumque laborum error at similique voluptatibus eveniet amet pariatur!</p>
             </div>
         </div> <!--.contenedor de informacion de la herramienta-->
+
+        <div class="sub-contenedor-herramienta">
+            <div class="imagen-herramienta">
+                <img src="/build/img/herramientas/multimetro.jpg" alt="">
+            </div>
+            <div class="informacion-herramientas">
+                <h3>Multímetro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta est doloribus beatae repellendus, vero ipsum in facere vel voluptate laudantium cumque laborum error at similique voluptatibus eveniet amet pariatur!</p>
+            </div>
+        </div> <!--.contenedor de informacion de la herramienta-->
     </div>
 
 </section><!--.informacion extra (ya en temas de clase)-->
-
-<!-- <div class="boton-regreso">
-    <div class="imagen-boton">
-        <img src="/build/img/icons/upRow.svg" alt="^">
-    </div>
-</div> -->
 <?php incluirTemplate('footer'); ?>

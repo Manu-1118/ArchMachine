@@ -10,19 +10,7 @@
                 <ul class="opciones-navegacion">
                     <li><a href="/">Inicio</a></li>
                     <li><a href="../../partes.php">Partes de la computadora</a></li>
-                    <li class="sub-opciones">Arquitecturas ▾
-                        <ul id="sub-menu" class="sub-desplegado">
-                            <a href="">
-                                <li>x86</li>
-                            </a>
-                            <a href="">
-                                <li>x64</li>
-                            </a>
-                            <a href="">
-                                <li>ARM</li>
-                            </a>
-                        </ul>
-                    </li>
+                    <li><a href="../../arquitecturas.php">Arquictecturas</a></li>
                     <li><a href="#nosotros">Sobre Nosotros</a></li>
                     <li><a href="#herramientas">Herramientas</a></li>
                 </ul>

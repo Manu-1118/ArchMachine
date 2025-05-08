@@ -11,7 +11,7 @@ incluirTemplate('header');
     <h2>PARTES <span>DE </span>LA <span>COMPUTADORA</span></h2>
 
     <div class="contenedor-partes-pc swiper">
-    <?php incluirTemplate('bkCuadro') ?>
+        <?php incluirTemplate('bkCuadro') ?>
 
         <div class="carta-elementos">
             <ul class="lista-cartas swiper-wrapper">
