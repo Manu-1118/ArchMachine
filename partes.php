@@ -2,12 +2,15 @@
 require 'includes/app.php';
 
 incluirTemplate('inicio');
-incluirTemplate('header');
+// incluirTemplate('header');
 ?>
 
 <?php incluirTemplate('bkCuadro') ?>
 <div class="separar-cuerpo no-index partes-compu">
 
+    <div class="btn-home">
+        <a href="/"><button class="btn">Volver al inicio</button></a>
+    </div>
     <h2>PARTES <span>DE </span>LA <span>COMPUTADORA</span></h2>
 
     <div class="contenedor-partes-pc swiper">

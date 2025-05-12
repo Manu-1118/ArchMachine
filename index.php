@@ -6,7 +6,7 @@ incluirTemplate('inicio');
 <section class="imagen-fondo-principal">
     <div class="separar-cuerpo">
 
-        <?php incluirTemplate('header'); ?>
+        <?php incluirTemplate('header', true); ?>
 
         <main class="contenido seccion">
             <div class="titulo-pagina">
@@ -54,7 +54,7 @@ incluirTemplate('inicio');
 
 </section><!--.seccion menu y titulos-->
 
-<section class="sobre-nosotros">
+<section class="sobre-nosotros" id='nosotros'>
 
     <?php incluirTemplate('bkCuadro'); ?>
 
@@ -70,13 +70,13 @@ incluirTemplate('inicio');
 
 </section><!--.informacion sobre la pagina-->
 
-<section class="sobre-arquitecturas">
+<section class="sobre-arquitecturas" id="arquitecturas">
 
     <h2>ARQUITECTURAS DE <span>COMPUTADORAS</span></h2>
 
     <div class="contenedor-arquitecturas">
 
-        <a href="" class="arquitectura">
+        <a href="/arq86.php" class="arquitectura">
             <div class="contenido-arq">
                 <h3 class="titulo">X86</h3>
             </div>
@@ -99,7 +99,7 @@ incluirTemplate('inicio');
     </div>
 </section><!--.seccion de arquitecturas -->
 
-<section class="informacion-secundaria">
+<section class="informacion-secundaria" id="herramientas">
     <?php incluirTemplate('bkCuadro'); ?>
 
     <h2>HERRAMIENTAS <span>ESENCIALES</span></h2>

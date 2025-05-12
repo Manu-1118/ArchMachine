@@ -1,3 +1,5 @@
+/**CONTENIDO DEL INDEX**/
+
 .sobre-arquitecturas {
 
     h2 {
@@ -29,7 +31,7 @@
     .arquitectura {
 
         width: 100%;
-        height: 40rem;
+        height: 38rem;
         border: 1.5px solid $morado;
         border-radius: 2rem;
         animation: flotar 4s linear infinite;
@@ -107,5 +109,137 @@
 
     100% {
         transform: translateY(0rem);
+    }
+}
+
+/**CONTENIDO DEL LAS ARQUITECTURAS**/
+.arquitecturas {
+
+    .contenedor-titulo {
+
+        color: $blanco;
+        text-align: left;
+        font-family: $fuente_titulo_principal;
+        font-weight: $regular;
+        width: 65%;
+
+        h2 {
+
+            text-align: left;
+            font-size: 6rem;
+            font-weight: $bold;
+
+            span {
+
+                color: $azul_secundario;
+            }
+        }
+
+        p {
+
+            font-family: $fuente_titulo_principal;
+            color: $gris;
+            width: 65rem;
+            text-align: left;
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+    }
+
+    .titulo-arquitectura {
+
+        display: flex;
+        justify-content: space-around;
+        //max-height: 30rem;
+
+        .contenedor-imagen {
+
+            //width: 40%;
+
+            .imagen {
+
+                margin: 0 auto;
+                width: 30rem;
+                //height: 20rem;
+                //width: 20rem;
+            }
+        }
+    }
+}
+
+.h3-arq {
+
+    margin-top: 10rem;
+    font-family: $fuente_titulos_secundario;
+    color: $blanco;
+    font-size: 5rem;
+    font-weight: $regular;
+}
+
+.linea-tiempo {
+
+    @include grid(5, 3rem);
+    width: 85%;
+    margin: 0 auto;
+
+    .tiempo {
+
+
+        .contenido {
+
+            height: 10rem;
+            border: 8px solid $morado;
+            border-radius: 1rem;
+            background-color: $azul_secundario;
+        }
+    }
+}
+
+.componentes-claves {
+
+    width: 85%;
+    margin: 10rem auto 0 auto;
+
+    .contenedor-componentes {
+
+        @include grid(4, 3rem);
+        width: 100%;
+
+        .componente {
+
+            padding: 1rem;
+            border: 3px solid $morado;
+            border-radius: 1rem;
+            background-color: $azul_secundario;
+            //min-width: 25rem;
+
+            .icono {
+
+                margin: 0 auto;
+                width: 60%;
+                filter: invert(100);
+            }
+        }
+    }
+}
+
+.conclusiones {
+
+    @include grid(2, 3rem);
+
+    width: 95%;
+    margin: 0 auto $separacion auto;
+
+    .modos-operacion,
+    .ventajas-desventajas {
+
+        @include grid(2, 1rem);
+        //border: 1.5px solid $morado;
+        background-color: $azul_secundario;
+        border-radius: 2rem;
+        margin: 0 auto;
+        padding: 2rem;
+        height: 30rem;
+
     }
 }

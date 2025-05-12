@@ -1,39 +1,15 @@
 //funcion para ejecutar las demas funciones cuando se cargue el DOM
 document.addEventListener('DOMContentLoaded', function () {
+
     //Funciones
-    // desplegarSubMenu();
+    navegacionFija();
+    scrollNav();
+    resaltarEnlace()
     swiper();
 })
 
-function navegacionFija() {
+function paginaActual() {
+    const currentURL = window.location.href;
 
-    const header = document.querySelector('.header');
-
-    window.addEventListener('scroll', function () {
-
-        var scroll = window.screenY;
-
-        if (scroll > 10) {
-
-            header.style.backgroundColor = '#071c2b44';
-
-        } else {
-
-            header.style.backgroundColor = 'transparent';
-        }
-    })
-}
-
-function scrollNav() {
-    const navLinks = document.querySelectorAll('.opciones-navegacion');
-    navLinks.forEach(link => {
-        link.addEventListener('click', e => {
-
-            e.preventDefault();
-            const seccion_scroll = e.target.getAttribute('href');
-            const seccion = document.querySelector(seccion_scroll);
-
-            seccion.scrollIntoView({ behavior: 'smooth' });
-        })
-    })
+    console.log(currentURL);
 }

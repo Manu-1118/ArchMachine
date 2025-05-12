@@ -12,7 +12,7 @@
         color: $blanco;
         font-family: $fuente_titulos_secundario;
         font-weight: $regular;
-        font-size: 8rem;
+        font-size: 7rem;
 
         span {
 
@@ -116,6 +116,30 @@
             aspect-ratio: 16 / 9;
             // object-fit: cover;
             border-radius: 10px;
+        }
+    }
+}
+
+.btn-home {
+
+    margin: .5rem;
+    width: 100%;
+
+    .btn {
+
+        padding: .5rem 2rem;
+        background-color: $azul_principal;
+        border-radius: 1rem;
+        border-color: #5372F0;
+        color: $blanco;
+        font-family: $fuente_titulo_principal;
+
+        &:hover {
+
+            background-color: #5372F0;
+            color: $azul_principal;
+            box-shadow: 0rem 0rem 3rem .5rem lighten(rgba(7, 28, 43, 0.75), 20);
+
         }
     }
 }

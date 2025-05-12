@@ -10,8 +10,8 @@
                 <ul class="opciones-navegacion">
                     <li><a href="/">Inicio</a></li>
                     <li><a href="../../partes.php">Partes de la computadora</a></li>
-                    <li><a href="../../arquitecturas.php">Arquictecturas</a></li>
                     <li><a href="#nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#arquitecturas">Arquitecturas</a></li>
                     <li><a href="#herramientas">Herramientas</a></li>
                 </ul>
             </div>
