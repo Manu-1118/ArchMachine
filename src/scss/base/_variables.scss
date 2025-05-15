@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
 
 //Fuentes
-$fuente_Mont: "Montserrat", sans-serif;
-$fuente_fira: "Fira Code", monospace;
-$fuente_codePro: "Source Code Pro", monospace;
+
+$fuente_titulo_principal: "Poppins"; // Titulos llamativos o por encima de otros titulos y navegaciones
+$fuente_titulos_secundario: "Teko"; // Titulos no principales
 
 //size de la fuente
 $delgada: 300;
@@ -12,9 +13,15 @@ $bold: 700;
 $black: 900;
 
 //paleta de colores
-$azul-oscuro: #001653;
-$blanco: #ffffff;
-$negro: #000000;
+// $azul-oscuro: #001653;
+$azul_principal: #071c2b; // Fondos principales (por defecto body)
+$azul_secundario: #38B6FF; // Fondos secundarios y fuentes principales, iconos
+$azul_gris: #DDE4FF;
+$morado: #142757; // para diseños y animaciones como hover para contraste
+$blanco: #F9F9F9; // Fuente Principal (combinado con azul_secundario), iconos y menus
+$gris: #A7A9BE; // Fuente de texto plano/contenido, sombras, bordes y decoracion
+$rosado: #ff2d75;
+$negro: #0e0e0e;
 
 
 // Tamaño de Media Queries
