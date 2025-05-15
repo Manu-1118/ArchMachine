@@ -154,10 +154,25 @@
 
         .contenedor-imagen {
 
+            display: flex;
+            // flex-direction: column;
+            align-items: center;
+            justify-content: center;
             //width: 40%;
+
+            p {
+                position: absolute;
+                font-size: 5rem;
+                font-weight: $bold;
+                color: $blanco;
+                font-family: $fuente_titulo_principal;
+            }
 
             .imagen {
 
+                // z-index: 0;
+                box-shadow: 0px 0px 50px 0px lighten(rgba(7, 28, 43, 0.75), 20);
+                border-radius: 50%;
                 margin: 0 auto;
                 width: 30rem;
                 //height: 20rem;
@@ -174,6 +189,11 @@
     color: $blanco;
     font-size: 5rem;
     font-weight: $regular;
+
+    span {
+
+        color: $azul_secundario;
+    }
 }
 
 .linea-tiempo {
@@ -181,16 +201,44 @@
     @include grid(5, 3rem);
     width: 85%;
     margin: 0 auto;
+    //background-color: $azul_principal;
 
     .tiempo {
 
+        text-align: center;
+        color: $blanco;
+
+        p {
+
+            font-family: $fuente_titulo_principal;
+            font-weight: $delgada;
+            font-size: 2rem;
+            margin: 1rem;
+        }
 
         .contenido {
 
             height: 10rem;
-            border: 8px solid $morado;
+            border: 2px solid $morado;
             border-radius: 1rem;
-            background-color: $azul_secundario;
+            background-color: lighten($azul_principal, 10);
+            box-shadow: 0px 0px 25px 0px lighten(rgba(7, 28, 43, 0.75), 20);
+
+            h3 {
+
+                font-family: $fuente_titulo_principal;
+                font-weight: $bold;
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+
+                font-family: $fuente_titulos_secundario;
+                font-weight: $delgada;
+                font-size: 2.5rem;
+                margin: 0;
+            }
         }
     }
 }
@@ -208,16 +256,44 @@
         .componente {
 
             padding: 1rem;
-            border: 3px solid $morado;
+            text-align: center;
+            border: 2px solid $morado;
             border-radius: 1rem;
-            background-color: $azul_secundario;
-            //min-width: 25rem;
+            background-color: lighten($azul_principal, 10);
+            box-shadow: 0px 0px 25px 0px lighten(rgba(7, 28, 43, 0.75), 20);
+            height: 35rem;
 
             .icono {
 
-                margin: 0 auto;
-                width: 60%;
-                filter: invert(100);
+                margin: 2rem auto;
+                width: 50%;
+                background-color: lighten($azul_principal, 15);
+                border-radius: 1rem;
+                padding: 1rem;
+
+                img {
+
+                    filter: invert(100);
+                }
+            }
+
+            h4 {
+
+                color: $blanco;
+                margin: 2rem auto;
+                font-family: $fuente_titulos_secundario;
+                font-size: 3rem;
+                font-weight: $bold;
+            }
+
+            p {
+
+                color: $blanco;
+                margin: 2rem;
+                text-align: justify;
+                font-size: 1.8rem;
+                font-family: $fuente_titulo_principal;
+                font-weight: $delgada;
             }
         }
     }
@@ -225,7 +301,7 @@
 
 .conclusiones {
 
-    @include grid(2, 3rem);
+    @include grid(2, 0);
 
     width: 95%;
     margin: 0 auto $separacion auto;
@@ -233,13 +309,30 @@
     .modos-operacion,
     .ventajas-desventajas {
 
-        @include grid(2, 1rem);
-        //border: 1.5px solid $morado;
-        background-color: $azul_secundario;
-        border-radius: 2rem;
-        margin: 0 auto;
+        @include grid(2, 2rem);
         padding: 2rem;
         height: 30rem;
+        text-align: center;
+        color: $blanco;
 
+    }
+
+    .modo,
+    .ven-des {
+
+        background-color: lighten($azul_principal, 10);
+        border: 2px solid $morado;
+        border-radius: 1rem;
+        margin: 0 auto;
+        padding: 0 2rem;
+        box-shadow: 0px 0px 25px 0px lighten(rgba(7, 28, 43, 0.75), 20);
+    }
+
+    .ventajas-desventajas {
+
+        .ven-des {
+
+            list-style: none;
+        }
     }
 }

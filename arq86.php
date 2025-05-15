@@ -18,6 +18,7 @@ incluirTemplate('inicio');
         </div>
 
         <div class="contenedor-imagen">
+            <p>X86</p>
             <img class="imagen" src="/build/img/icons/cpu.svg" alt="Procesador">
         </div>
 
@@ -26,12 +27,20 @@ incluirTemplate('inicio');
 </div>
 
 <main>
-    <h3 class="h3-arq">HISTORIA DE LOS PROCESADORES X86</h3>
+    <h3 class="h3-arq">HISTORIA DE LOS <span>PROCESADORES X86</span></h3>
     <div class="linea-tiempo">
 
         <div class="tiempo">
             <div class="contenido">
-                <p>Nombre del chip</p>
+                <h3>Nombre del chip</h3>
+                <p>año lanzado</p>
+            </div>
+            <p>Breve descripcion de esa fecha</p>
+        </div> <!--.fin tiempo-->   
+
+        <div class="tiempo">
+            <div class="contenido">
+                <h3>Nombre del chip</h3>
                 <p>año lanzado</p>
             </div>
             <p>Breve descripcion de esa fecha</p>
@@ -39,7 +48,7 @@ incluirTemplate('inicio');
 
         <div class="tiempo">
             <div class="contenido">
-                <p>Nombre del chip</p>
+                <h3>Nombre del chip</h3>
                 <p>año lanzado</p>
             </div>
             <p>Breve descripcion de esa fecha</p>
@@ -47,7 +56,7 @@ incluirTemplate('inicio');
 
         <div class="tiempo">
             <div class="contenido">
-                <p>Nombre del chip</p>
+                <h3>Nombre del chip</h3>
                 <p>año lanzado</p>
             </div>
             <p>Breve descripcion de esa fecha</p>
@@ -55,15 +64,7 @@ incluirTemplate('inicio');
 
         <div class="tiempo">
             <div class="contenido">
-                <p>Nombre del chip</p>
-                <p>año lanzado</p>
-            </div>
-            <p>Breve descripcion de esa fecha</p>
-        </div> <!--.fin tiempo-->
-
-        <div class="tiempo">
-            <div class="contenido">
-                <p>Nombre del chip</p>
+                <h3>Nombre del chip</h3>
                 <p>año lanzado</p>
             </div>
             <p>Breve descripcion de esa fecha</p>
@@ -72,7 +73,7 @@ incluirTemplate('inicio');
 </main>
 
 <section class="componentes-claves">
-    <h3 class="h3-arq">COMPONENTES CLAVE</h3>
+    <h3 class="h3-arq">COMPONENTES <span>CLAVE</span></h3>
 
     <div class="contenedor-componentes">
 

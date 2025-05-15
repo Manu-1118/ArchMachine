@@ -83,14 +83,14 @@ incluirTemplate('inicio');
         </a><!--.Arquitectura-->
 
 
-        <a href="" class="arquitectura">
+        <a href="/arq64.php" class="arquitectura">
             <div class="contenido-arq">
                 <h3 class="titulo">X64</h3>
                 <!--<img class="imagen-arquitectura" src="/build/img/arquitecturas/ARM.jpg" alt="Arquitectura"> -->
             </div>
         </a><!--.Arquitectura-->
 
-        <a href="" class="arquitectura">
+        <a href="/arqarm.php" class="arquitectura">
             <div class="contenido-arq">
                 <h3 class="titulo">ARM</h3>
             </div>
