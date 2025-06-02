@@ -25,7 +25,7 @@ incluirTemplate('inicio');
                 </div>
                 <div class="contenido-info">
                     <h3>Informativo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Ofrecemos contenido técnico claro y accesible sobre arquitectura de sistemas, ideal para estudiantes y entusiastas del hardware.</p>
                 </div>
             </div> <!--.info-->
 
@@ -35,7 +35,7 @@ incluirTemplate('inicio');
                 </div>
                 <div class="contenido-info">
                     <h3>Conciso</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Toda la información presentada de forma directa y resumida para que entiendas los conceptos sin rodeos ni tecnicismos innecesarios.</p>
                 </div>
             </div> <!--.info-->
 
@@ -45,7 +45,7 @@ incluirTemplate('inicio');
                 </div>
                 <div class="contenido-info">
                     <h3>Calidad</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Creamos contenido confiable y bien estructurado para que aprendas con seguridad y claridad en cada paso.</p>
                 </div>
             </div> <!--.info-->
         </div><!--.informacion sobre la pagina-->
@@ -60,8 +60,8 @@ incluirTemplate('inicio');
 
     <div class="informacion-sobre-nosotros">
         <h2>TUS<span> GUIAS</span> EN <span>ARQUITECTURA</span> DE <span>SISTEMAS</span></h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto suscipit impedit ut assumenda sit provident dignissimos optio ea, odio, iste veniam perspiciatis? Vel accusantium quo sed quis numquam neque incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aperiam quam repellendus laboriosam architecto molestias. Ratione, incidunt ullam quae recusandae eius corporis quasi explicabo, illo, dolorem adipisci animi sequi est.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto suscipit impedit ut assumenda sit provident dignissimos optio ea, odio, iste veniam perspiciatis? Vel accusantium quo sed quis numquam neque incidunt.</p>
+        <p>La arquitectura de sistemas es la base que define la estructura, comportamiento y más aspectos de un sistema informático. Ya seas estudiante, entusiasta o desarrollador, aquí encontrarás recursos útiles para fortalecer tu conocimiento en esta área fundamental de la informática.</p>
+        <p>Explora nuestras secciones para aprender sobre tipos de arquitecturas, partes esenciales de una computadora, herramientas utilizadas por profesionales y mucho más.</p>
     </div>
 
     <div class="imagen-sobre-nosotros">
@@ -112,39 +112,75 @@ incluirTemplate('inicio');
             </div>
             <div class="informacion-herramientas">
                 <h3>Multímetro</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta est doloribus beatae repellendus, vero ipsum in facere vel voluptate laudantium cumque laborum error at similique voluptatibus eveniet amet pariatur!</p>
+                <p>Permite medir voltaje, corriente y resistencia para diagnosticar fallos en circuitos y fuentes de poder.</p>
             </div>
         </div> <!--.contenedor de informacion de la herramienta-->
 
         <div class="sub-contenedor-herramienta">
             <div class="imagen-herramienta">
-                <img src="/build/img/herramientas/multimetro.jpg" alt="">
+                <img src="/build/img/herramientas/dest.jpg" alt="">
             </div>
             <div class="informacion-herramientas">
-                <h3>Multímetro</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta est doloribus beatae repellendus, vero ipsum in facere vel voluptate laudantium cumque laborum error at similique voluptatibus eveniet amet pariatur!</p>
+                <h3>Destornilladores de precisión</h3>
+                <p>Ideales para desmontar equipos electrónicos sin dañar tornillos ni componentes sensibles.</p>
             </div>
         </div> <!--.contenedor de informacion de la herramienta-->
 
         <div class="sub-contenedor-herramienta">
             <div class="imagen-herramienta">
-                <img src="/build/img/herramientas/multimetro.jpg" alt="">
+                <img src="/build/img/herramientas/pulseraanti.jpg" alt="">
             </div>
             <div class="informacion-herramientas">
-                <h3>Multímetro</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta est doloribus beatae repellendus, vero ipsum in facere vel voluptate laudantium cumque laborum error at similique voluptatibus eveniet amet pariatur!</p>
+                <h3>Pulsera Antiestática</h3>
+                <p>Protege los componentes electrónicos contra descargas electrostáticas durante su manipulación.</p>
             </div>
         </div> <!--.contenedor de informacion de la herramienta-->
 
         <div class="sub-contenedor-herramienta">
             <div class="imagen-herramienta">
-                <img src="/build/img/herramientas/multimetro.jpg" alt="">
+                <img src="/build/img/herramientas/amperimetro.jpg" alt="">
             </div>
             <div class="informacion-herramientas">
-                <h3>Multímetro</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta est doloribus beatae repellendus, vero ipsum in facere vel voluptate laudantium cumque laborum error at similique voluptatibus eveniet amet pariatur!</p>
+                <h3>Amperímetro</h3>
+                <p>Mide la corriente eléctrica que circula en un circuito. Es útil para verificar el consumo y detectar sobrecargas.</p>
             </div>
         </div> <!--.contenedor de informacion de la herramienta-->
+        <div class="sub-contenedor-herramienta">
+            <div class="imagen-herramienta">
+                <img src="/build/img/herramientas/kitsol.jpg" alt="">
+            </div>
+            <div class="informacion-herramientas">
+                <h3>Kit de soldadura</h3>
+                <p>Permite realizar reparaciones en placas electrónicas, como la sustitución de componentes dañados o la reconexión de pistas. Es especialmente útil en tareas de mantenimiento avanzado.</p>
+            </div>
+        </div> <!--.contenedor de informacion de la herramienta-->
+        <div class="sub-contenedor-herramienta">
+            <div class="imagen-herramienta">
+                <img src="/build/img/herramientas/blower.jpeg" alt="">
+            </div>
+            <div class="informacion-herramientas">
+                <h3>Estación de calor</h3>
+                <p>Se utiliza para soldar o desoldar componentes SMD en placas electrónicas. Es una herramienta avanzada que permite reparaciones precisas en microcomponentes.</p>
+            </div>
+         </div> <!--.contenedor de informacion de la herramienta-->
+        <div class="sub-contenedor-herramienta">
+            <div class="imagen-herramienta">
+                <img src="/build/img/herramientas/pasta.webp" alt="">
+            </div>
+            <div class="informacion-herramientas">
+                <h3>Pasta térmica</h3>
+                <p>Se aplica entre el procesador y el disipador. Mejora la transferencia de calor y previene el sobrecalentamiento.</p>
+            </div>
+             </div> <!--.contenedor de informacion de la herramienta-->
+        <div class="sub-contenedor-herramienta">
+            <div class="imagen-herramienta">
+                <img src="/build/img/herramientas/aire.jpg" alt="">
+            </div>
+            <div class="informacion-herramientas">
+                <h3>Aire comprimido</h3>
+                <p>Sirve para limpiar polvo de componentes sin contacto físico. Ideal para mantener ventiladores y placas libres de suciedad.</p>
+            </div> 
+            
     </div>
 
 </section><!--.informacion extra (ya en temas de clase)-->

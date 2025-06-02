@@ -14,7 +14,7 @@ incluirTemplate('inicio');
 
         <div class="contenedor-titulo">
             <h2>AQUITECTURA ARM <span>LA BASE </span>DE LOS <span>DISPOSITIVOS</span> MÓVILES</h2>
-            <p>Sed assumenda harum maxime reprehenderit qui quia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed assumenda harum maxime reprehenderit qui quia.</p>
+            <p>Una mirada a la arquitectura ARM, su evolución, componentes clave, modos de operación, ventajas y desventajas.</p>
         </div>
 
         <div class="contenedor-imagen">
@@ -32,42 +32,42 @@ incluirTemplate('inicio');
 
         <div class="tiempo">
             <div class="contenido">
-                <h3>Nombre del chip</h3>
-                <p>año lanzado</p>
+                <h3>ARM1</h3>
+                <p>1985</p>
             </div>
-            <p>Breve descripcion de esa fecha</p>
+            <p>Primer prototipo funcional de ARM, desarrollado por Acorn Computers. Muy eficiente para su época</p>
         </div> <!--.fin tiempo-->   
 
         <div class="tiempo">
             <div class="contenido">
-                <h3>Nombre del chip</h3>
-                <p>año lanzado</p>
+                <h3>ARM7TDMI</h3>
+                <p>1994</p>
             </div>
-            <p>Breve descripcion de esa fecha</p>
+            <p>Uno de los chips ARM más utilizados en dispositivos embebidos. Compatible con Thumb (16 bits)</p>
         </div> <!--.fin tiempo-->
 
         <div class="tiempo">
             <div class="contenido">
-                <h3>Nombre del chip</h3>
-                <p>año lanzado</p>
+                <h3>ARM Cortex-A8</h3>
+                <p>2005</p>
             </div>
-            <p>Breve descripcion de esa fecha</p>
+            <p> Parte de la serie Cortex-A, usado en smartphones y tablets. Mejoró rendimiento y multimedia</p>
         </div> <!--.fin tiempo-->
 
         <div class="tiempo">
             <div class="contenido">
-                <h3>Nombre del chip</h3>
-                <p>año lanzado</p>
+                <h3>Apple A7</h3>
+                <p>2013</p>
             </div>
-            <p>Breve descripcion de esa fecha</p>
+            <p>Primer procesador ARM de 64 bits para móviles. Usado en el iPhone 5s, marcó un antes y un después</p>
         </div> <!--.fin tiempo-->
 
         <div class="tiempo">
             <div class="contenido">
-                <h3>Nombre del chip</h3>
-                <p>año lanzado</p>
+                <h3>Apple M1</h3>
+                <p>2020</p>
             </div>
-            <p>Breve descripcion de esa fecha</p>
+            <p>Chip ARM para computadoras Mac. Alto rendimiento y eficiencia energética, rompió con Intel en Macs</p>
         </div> <!--.fin tiempo-->
     </div>
 </main>
@@ -81,32 +81,32 @@ incluirTemplate('inicio');
             <div class="icono">
                 <img src="/build/img/icons/math.svg" alt="Icono">
             </div>
-            <h4>Titulo componente</h4>
-            <p>Breve descripcion del componente</p>
+            <h4>Unidad de Control</h4>
+            <p>Dirige la ejecución de instrucciones con un diseño eficiente y simplificado, ideal para bajo consumo energético</p>
         </div>
 
         <div class="componente">
             <div class="icono">
                 <img src="/build/img/icons/math.svg" alt="Icono">
             </div>
-            <h4>Titulo componente</h4>
-            <p>Breve descripcion del componente</p>
+            <h4> Unidad Aritmético-Lógica</h4>
+            <p>Realiza operaciones básicas de cálculo y lógica, optimizada para velocidad y eficiencia</p>
         </div>
 
         <div class="componente">
             <div class="icono">
                 <img src="/build/img/icons/math.svg" alt="Icono">
             </div>
-            <h4>Titulo componente</h4>
-            <p>Breve descripcion del componente</p>
+            <h4>Registros de Propósito General</h4>
+            <p>Conjunto de 16 a 32 registro, todos de propósito general, lo que simplifica la arquitectura y mejora la velocidad.</p>
         </div>
 
         <div class="componente">
             <div class="icono">
                 <img src="/build/img/icons/math.svg" alt="Icono">
             </div>
-            <h4>Titulo componente</h4>
-            <p>Breve descripcion del componente</p>
+            <h4>Bus de Datos y Direcciones</h4>
+            <p>Permite el intercambio de datos entre la CPU, la memoria y periféricos</p>
         </div>
 
     </div>
@@ -119,13 +119,13 @@ incluirTemplate('inicio');
 
         <div class="modos-operacion">
             <div class="modo">
-                <h4>Titulo del modo</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt aspernatur dignissimos distinctio nisi ipsam vel rem nulla nostrum id unde.</p>
+                <h4>Modo Usuario</h4>
+                <p>Modo normal de ejecución de aplicaciones, sin privilegios sobre el hardware</p>
             </div>
 
             <div class="modo">
-                <h4>Titulo del modo</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt aspernatur dignissimos distinctio nisi ipsam vel rem nulla nostrum id unde.</p>
+                <h4>Modo Supervisor</h4>
+                <p>Se accede a este modo mediante llamadas al sistema; permite control del hardware con privilegios elevados</p>
             </div>
         </div>
 
@@ -139,20 +139,20 @@ incluirTemplate('inicio');
             <div class="ven-des">
                 <h4>Ventajas mas importantes</h4>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Bajo consumo de energía, ideal para dispositivos móviles y embebidos</li>
+                    <li>Arquitectura RISC: instrucciones simples y rápidas</li>
+                    <li>Escalable para múltiples núcleos y configuraciones</li>
+                    <li>Gran adopción en el mercado móvil y IoT</li>
                 </ul>
             </div>
 
             <div class="ven-des">
                 <h4>Desventajas mas importantes</h4>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Menor compatibilidad con software de escritorio tradicional</li>
+                    <li>Peor rendimiento en cargas de trabajo pesadas como servidores</li>
+                    <li>Fragmentación entre fabricantes y versiones</li>
+                    <li>Optimización necesaria en compilación específica para obtener el mejor rendimiento</li>
                 </ul>
             </div>
         </div>

@@ -39,7 +39,7 @@ incluirTemplate('inicio');
 
                 <li class="elemento-carta swiper-slide">
                     <a href="#" class="enlace">
-                        <img src="/build/img/pc/cascos.png" alt="tarjeta madre" class="imagen-elemento">
+                        <img src="/build/img/pc/cascos.png" alt="cascos" class="imagen-elemento">
                         <p class="categoria">Periférico</p>
                         <h2 class="titulo-elemento">Audífonos / Cascos</h2>
                         <button class="boton-carta material-symbols-rounded">arrow_forward</button>
@@ -64,6 +64,41 @@ incluirTemplate('inicio');
                     </a>
                 </li><!--.fin ficha elemento-->
 
+                   <li class="elemento-carta swiper-slide">
+                    <a href="#" class="enlace">
+                        <img src="/build/img/pc/cpu1.jpg" alt="procesador" class="imagen-elemento">
+                        <p class="categoria">Componente</p>
+                        <h2 class="titulo-elemento">Procesador</h2>
+                        <button class="boton-carta material-symbols-rounded">arrow_forward</button>
+                    </a>
+                </li><!--.fin ficha elemento-->
+
+                   <li class="elemento-carta swiper-slide">
+                    <a href="#" class="enlace">
+                        <img src="/build/img/pc/fuente.jpg" alt="Fuente de poder" class="imagen-elemento">
+                        <p class="categoria">Componente</p>
+                        <h2 class="titulo-elemento">Fuente de Poder</h2>
+                        <button class="boton-carta material-symbols-rounded">arrow_forward</button>
+                    </a>
+                </li><!--.fin ficha elemento-->
+
+                   <li class="elemento-carta swiper-slide">
+                    <a href="#" class="enlace">
+                        <img src="/build/img/pc/ssd.jpg" alt="ssd" class="imagen-elemento">
+                        <p class="categoria">Componente</p>
+                        <h2 class="titulo-elemento">SSD/Solid State Drive</h2>
+                        <button class="boton-carta material-symbols-rounded">arrow_forward</button>
+                    </a>
+                </li><!--.fin ficha elemento-->
+
+                   <li class="elemento-carta swiper-slide">
+                    <a href="#" class="enlace">
+                        <img src="/build/img/pc/gpu.png" alt="GPU" class="imagen-elemento">
+                        <p class="categoria">Componente</p>
+                        <h2 class="titulo-elemento">Tarjeta Gráfica</h2>
+                        <button class="boton-carta material-symbols-rounded">arrow_forward</button>
+                    </a>
+                </li><!--.fin ficha elemento-->
             </ul>
 
             <div class="swiper-pagination"></div>
