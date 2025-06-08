@@ -1,0 +1,61 @@
+.formulario {
+
+    width: 60%;
+    margin: 8rem auto;
+
+    .btn-cancelar {
+
+        border-radius: 1rem;
+        background-color: $azul_secundario;
+        color: $azul_principal;
+        padding: 1rem 2rem;
+        margin-top: 3rem;
+        margin-right: 2rem;
+    }
+
+    fieldset {
+
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    p {
+        font-size: 1.4rem;
+        color: $gris;
+        margin: 2rem 0 0 0;
+    }
+
+    legend {
+        font-size: 2rem;
+        color: $gris;
+    }
+
+    label {
+        font-weight: $bold;
+        text-transform: uppercase;
+        display: block;
+        margin-left: .5rem;
+        color: $azul_secundario;
+    }
+
+    input:not([type="submit"]),
+    textarea,
+    select {
+        padding: .5rem 0 .5rem 1rem;
+        display: block;
+        width: 100%;
+        background-color: $blanco;
+        border: 1px solid $gris;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    textarea {
+        height: 10rem;
+    }
+
+    input[type="radio"] {
+        margin: 0;
+        width: auto;
+    }
+}
