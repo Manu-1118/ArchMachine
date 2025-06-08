@@ -2,14 +2,17 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     //Funciones
-    navegacionFija();
-    scrollNav();
-    resaltarEnlace()
+    paginaActual(window.location.pathname);
     swiper();
 })
 
-function paginaActual() {
-    const currentURL = window.location.href;
+function paginaActual(ruta) {
 
-    console.log(currentURL);
+    const index = ruta.substring(ruta.lastIndexOf('/') + 1);
+    if (index === '' || ruta.includes('index.php')) {
+
+        navegacionFija();
+        scrollNav();
+        resaltarEnlace();
+    }
 }

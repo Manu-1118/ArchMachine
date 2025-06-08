@@ -53,19 +53,29 @@ function scrollNav() {
     const navLinks = document.querySelectorAll('.navegacion a');
     const enlaces = Array.from(navLinks).slice(2, 5);
 
-    
+
     enlaces.forEach(link => {
-        
-        
+
+
         link.addEventListener('click', e => {
-            
+
 
             e.preventDefault();
 
             const seccionScroll = e.target.getAttribute('href');
             const section = document.querySelector(seccionScroll);
 
-            section.scrollIntoView({ behavior: 'smooth' });
+            if (section) {
+                const offset = 60;
+                const targetPosition = section.offsetTop - offset;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+
+            // section.scrollIntoView({ behavior: 'smooth' });
         })
     });
 }
