@@ -1,15 +1,20 @@
 <?php
 
-/** Creacion de constantes **/
+/** Creación de constantes **/
 define('TEMPLATES_URL', __DIR__ . '/template');
-define('FUNCIONES_URL', __DIR__ . 'funciones.php');
+define('FUNCIONES_URL', __DIR__ . '/funciones.php'); // <- agregada la barra faltante
 
+/**
+ * Incluir un archivo de plantilla
+ */
 function incluirTemplate(string $nombre, bool $inicio = false)
 {
     include TEMPLATES_URL . "/{$nombre}.php";
 }
 
-//unicamente uso para visualizar las variables, arreglos, etc...
+/**
+ * Función para depurar cualquier variable o contenido
+ */
 function debuguear($contenido)
 {
     echo "<pre>";
@@ -18,22 +23,44 @@ function debuguear($contenido)
     exit;
 }
 
-// funcion para obtener la imagen subida y moverla a la carpeta indicada en el servidor
+/**
+ * Función para guardar una imagen en una subcarpeta dentro de /src/img/
+ *
+ * @param string $carpeta Nombre de la subcarpeta dentro de /src/img/ (ej. 'componentes')
+ * @param array $imagen Datos del archivo $_FILES['imagen']
+ * @return string Nombre único del archivo guardado
+ */
 function guardarImagen($carpeta, $imagen): string
 {
-    // si la carpeta donde se guardara la imagen no existe, que se cree
-    $carpetaImagenes = '/' . $carpeta . '/'; // ruta de la carpeta(raiz)
+    // Ruta absoluta hacia la carpeta de imágenes
+    $carpetaImagenes = __DIR__ . "/src/img/{$carpeta}/";
 
-    // si no existe crear
+    // Si no existe la carpeta, crearla con permisos adecuados
     if (!is_dir($carpetaImagenes)) {
-        mkdir($carpetaImagenes);
+        mkdir($carpetaImagenes, 0755, true); // true: crea carpetas recursivamente
     }
 
-    // generar nombre unico para cada imagen
-    $nombreImagen = md5(uniqid(rand(), true)) . '.jpg';
+    // Validar el tipo de imagen permitida
+    $tiposPermitidos = ['image/jpeg', 'image/png'];
+    if (!in_array($imagen['type'], $tiposPermitidos)) {
+        die('❌ Tipo de imagen no válido. Solo se permiten archivos JPG y PNG.');
+    }
 
-    // guardar la imagen cargada en el servidor
-    move_uploaded_file($imagen['tmp_name'], $carpetaImagenes . $nombreImagen);
+    // Validar tamaño máximo (5MB)
+    $tamanioMaximo = 5 * 1024 * 1024;
+    if ($imagen['size'] > $tamanioMaximo) {
+        die('❌ La imagen supera el tamaño máximo de 5 MB.');
+    }
 
-    return $nombreImagen; //retornar nombre para usarlo en la insercion del query
+    // Obtener la extensión original
+    $extension = pathinfo($imagen['name'], PATHINFO_EXTENSION);
+
+    // Generar nombre único
+    $nombreImagen = md5(uniqid(rand(), true)) . '.' . $extension;
+
+    // Mover el archivo a la carpeta final
+    $rutaDestino = $carpetaImagenes . $nombreImagen;
+    move_uploaded_file($imagen['tmp_name'], $rutaDestino);
+
+    return $nombreImagen;
 }
